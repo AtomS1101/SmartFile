@@ -23,7 +23,7 @@ ___
 const NewFile = new SmartFile();
 NewFile.filePath = "setting.json";
 NewFile.content = { theme: "dark" };
-log(NewFile.content);  // { theme: "dark"}
+log(NewFile.content);  // { theme: "dark" }
 ```
 
 ___
