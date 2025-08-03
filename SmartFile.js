@@ -1,4 +1,4 @@
-class SmartFile{
+class SmartFile {
 	constructor(filePath){
 		const FM = FileManager;
 		this.fm = FM.isFileStoredIniCloud() ? FM.iCloud() : FM.local();
