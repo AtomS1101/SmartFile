@@ -1,7 +1,7 @@
 class SmartFile {
 	constructor(filePath){
 		const FM = FileManager;
-		this.fm = FM.isFileStoredIniCloud() ? FM.iCloud() : FM.local();
+		this.fm = FM.isFileStoredIniCloud(module.filename) ? FM.iCloud() : FM.local();
 		this.libraryPath = this.fm.joinPath(this.fm.libraryDirectory(), filePath);
 		this.extention = filePath.slice(filePath.lastIndexOf(".") + 1).toLowerCase();
 	}
