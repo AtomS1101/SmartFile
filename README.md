@@ -1,9 +1,14 @@
 # SmartFile
-### version : 1.0
+### version : 1.1
 
 ```js
 new SmartFile();
 ```
+
+___
+## Methods
+#### `create(content)`
+Create a new file with the given content. If the file already exists, the function does nothing. This is usually intended to create the file on the first run.
 
 ___
 ## Properties
@@ -23,9 +28,8 @@ ___
 const NewFile = new SmartFile();
 NewFile.filePath = "setting.json";
 NewFile.content = { theme: "dark" };
-log(NewFile.content);  // { theme: "dark" }
+log(NewFile.content);  // { theme: "dark"}
 ```
 
 ___
 ## source code
-[Click here to download](https://github.com/AtomS1101/SmartFile/blob/main/SmartFile.js)
