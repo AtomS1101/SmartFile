@@ -5,6 +5,11 @@ class SmartFile {
 		this.libraryPath = this.fm.joinPath(this.fm.libraryDirectory(), filePath);
 		this.extention = filePath.slice(filePath.lastIndexOf(".") + 1).toLowerCase();
 	}
+	create(content){
+		if (!this.fm.fileExists(this.libraryPath)) {
+			this.fm.writeString(this.libraryPath, content);
+		}
+	}
 	get content(){
 		if (!this.fm.fileExists(this.libraryPath)) return undefined;
 		const Content = this.fm.readString(this.libraryPath);
