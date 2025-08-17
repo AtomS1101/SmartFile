@@ -33,4 +33,4 @@ log(NewFile.content);  // { theme: "dark"}
 
 ___
 ## source code
-[Click here to download](https://github.com/AtomS1101/SmartFile/raw/refs/heads/main/SmartFile.js)
+[Click here to download](https://github.com/AtomS1101/SmartFile/blob/main/SmartFile.js)
