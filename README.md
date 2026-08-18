@@ -25,8 +25,8 @@ String of file content.
 ___
 ## Example
 ```js
-const NewFile = new SmartFile();
-NewFile.filePath = "setting.json";
+const NewFile = new SmartFile("setting.json");
+NewFile.create({ theme: "dark" });
 NewFile.content = { theme: "dark" };
 log(NewFile.content);  // { theme: "dark"}
 ```
