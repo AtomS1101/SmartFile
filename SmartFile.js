@@ -7,7 +7,7 @@ class SmartFile {
 	}
 	create(content){
 		if (!this.fm.fileExists(this.libraryPath)) {
-			this.fm.writeString(this.libraryPath, content);
+			this.fm.writeString(this.libraryPath, String(content));
 		}
 	}
 	get content(){
